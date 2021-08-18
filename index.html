@@ -15,54 +15,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="topo">
-      <h1>FoodBox</h1>
-      <h2>Monte seu box e receba em 15 minutos!</h2>
-    </div>
+    <div id="teste" class="container">
+      <div class="topo">
+        <h1>FoodBox</h1>
+        <h2>Monte seu box e receba em 15 minutos!</h2>
+      </div>
 
-    <h3>Primeiro, seu prato</h3>
-    <div id="frango" class="produto" onclick="escolherFrango()">
-      <img src="img/frango.jpg" />
-      <h4>Frango Yin-Yang</h4>
-      <p>Um pouco de batata, um pouco de salada</p>
-      <p class="preco">R$ 19,90</p>
-    </div>
-    <div id="carne" class="produto" onclick="escolherCarne()">
-      <img src="img/carne.jpg" />
-      <h4>Carne e salada</h4>
-      <p>Partida ao meio pra parecer mais carne</p>
-      <p class="preco">R$ 24,90</p>
-    </div>
+      <h3>Primeiro, seu prato</h3>
+      <div id="frango" class="produto" onclick="escolherFrango()">
+        <img src="img/frango.jpg" alt="" />
+        <h4>Frango Yin-Yang</h4>
+        <p>Um pouco de batata, um pouco de salada</p>
+        <p class="preco">R$ 19,90</p>
+      </div>
+      <div id="carne" class="produto" onclick="escolherCarne()">
+        <img src="img/carne.jpg" alt="" />
+        <h4>Carne e salada</h4>
+        <p>Partida ao meio pra parecer mais carne</p>
+        <p class="preco">R$ 24,90</p>
+      </div>
 
-    <h3>Agora, sua bebida</h3>
-    <div id="coca" class="produto" onclick="escolherCoca()">
-      <img src="img/coca.jpg" />
-      <h4>Coca-cola gelada</h4>
-      <p>Normal, zero ou stevia. Vai na sorte.</p>
-      <p class="preco">R$ 5,90</p>
-    </div>
-    <div id="refresco" class="produto" onclick="escolherRefresco()">
-      <img src="img/refresco.jpg" />
-      <h4>Refresco</h4>
-      <p>Podia ser suco, mas leva água</p>
-      <p class="preco">R$ 3,90</p>
-    </div>
+      <h3>Agora, sua bebida</h3>
+      <div id="coca" class="produto" onclick="escolherCoca()">
+        <img src="img/coca.jpg" alt="" />
+        <h4>Coca-cola gelada</h4>
+        <p>Normal, zero ou stevia. Vai na sorte.</p>
+        <p class="preco">R$ 5,90</p>
+      </div>
+      <div id="refresco" class="produto" onclick="escolherRefresco()">
+        <img src="img/refresco.jpg" alt="" />
+        <h4>Refresco</h4>
+        <p>Podia ser suco, mas leva água</p>
+        <p class="preco">R$ 3,90</p>
+      </div>
 
-    <h3>Por fim, sua sobremesa</h3>
-    <div id="pudim" class="produto" onclick="escolherPudim()">
-      <img src="img/pudim.jpg" />
-      <h4>Pudim</h4>
-      <p>Apenas um lindo e brilhante pudim</p>
-      <p class="preco">R$ 7,90</p>
-    </div>
-    <div id="sorvete" class="produto" onclick="escolherSorvete()">
-      <img src="img/sorvete.jpg" />
-      <h4>Sorvete bem gelado</h4>
-      <p>Três bolinhas como na foto</p>
-      <p class="preco">R$ 6,90</p>
-    </div>
+      <h3>Por fim, sua sobremesa</h3>
+      <div id="pudim" class="produto" onclick="escolherPudim()">
+        <img src="img/pudim.jpg" alt="" />
+        <h4>Pudim</h4>
+        <p>Apenas um lindo e brilhante pudim</p>
+        <p class="preco">R$ 7,90</p>
+      </div>
+      <div id="sorvete" class="produto" onclick="escolherSorvete()">
+        <img src="img/sorvete.jpg" alt="" />
+        <h4>Sorvete bem gelado</h4>
+        <p>Três bolinhas como na foto</p>
+        <p class="preco">R$ 6,90</p>
+      </div>
 
-    <div class="botao" onclick="finalizarPedido()">Finalizar pedido</div>
+      <div class="botao" onclick="finalizarPedido()">Finalizar pedido</div>
+    </div>
     <script src="controll.js"></script>
   </body>
 </html>
