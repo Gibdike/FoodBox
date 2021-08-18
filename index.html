@@ -1,28 +1,68 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FoodBox</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>FoodBox</h1>
-        <h2>Monte seu box e receba em 15 minutos!</h2>
-      </header>
-      <h3>Primeiro, seu prato</h3>
-      <div class="produto">
-        <img
-          src="https://www.seriouseats.com/thmb/LJQ1jFVrlJbSb23MmK5iwHUr_EY=/1500x1125/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2015__07__20210324-SouthernFriedChicken-Andrew-Janjigian-21-cea1fe39234844638018b15259cabdc2.jpg"
-          alt=""
-        />
-        <h4>Frango Yin-Yang</h4>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <p><strong>R$ 19,90</strong></p>
-      </div>
+    <div class="topo">
+      <h1>FoodBox</h1>
+      <h2>Monte seu box e receba em 15 minutos!</h2>
     </div>
+
+    <h3>Primeiro, seu prato</h3>
+    <div id="frango" class="produto" onclick="escolherFrango()">
+      <img src="img/frango.jpg" />
+      <h4>Frango Yin-Yang</h4>
+      <p>Um pouco de batata, um pouco de salada</p>
+      <p class="preco">R$ 19,90</p>
+    </div>
+    <div id="carne" class="produto" onclick="escolherCarne()">
+      <img src="img/carne.jpg" />
+      <h4>Carne e salada</h4>
+      <p>Partida ao meio pra parecer mais carne</p>
+      <p class="preco">R$ 24,90</p>
+    </div>
+
+    <h3>Agora, sua bebida</h3>
+    <div id="coca" class="produto" onclick="escolherCoca()">
+      <img src="img/coca.jpg" />
+      <h4>Coca-cola gelada</h4>
+      <p>Normal, zero ou stevia. Vai na sorte.</p>
+      <p class="preco">R$ 5,90</p>
+    </div>
+    <div id="refresco" class="produto" onclick="escolherRefresco()">
+      <img src="img/refresco.jpg" />
+      <h4>Refresco</h4>
+      <p>Podia ser suco, mas leva água</p>
+      <p class="preco">R$ 3,90</p>
+    </div>
+
+    <h3>Por fim, sua sobremesa</h3>
+    <div id="pudim" class="produto" onclick="escolherPudim()">
+      <img src="img/pudim.jpg" />
+      <h4>Pudim</h4>
+      <p>Apenas um lindo e brilhante pudim</p>
+      <p class="preco">R$ 7,90</p>
+    </div>
+    <div id="sorvete" class="produto" onclick="escolherSorvete()">
+      <img src="img/sorvete.jpg" />
+      <h4>Sorvete bem gelado</h4>
+      <p>Três bolinhas como na foto</p>
+      <p class="preco">R$ 6,90</p>
+    </div>
+
+    <div class="botao" onclick="finalizarPedido()">Finalizar pedido</div>
+    <script src="controll.js"></script>
   </body>
 </html>
